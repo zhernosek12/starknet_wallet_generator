@@ -1,0 +1,5 @@
+mnemonic~=0.20
+base58~=2.1.1
+tqdm~=4.66.1
+PyYAML==6.0.1
+pydantic==2.3.0
