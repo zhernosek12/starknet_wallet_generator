@@ -30,7 +30,7 @@ def main():
     for _ in tqdm(range(int(config.wallets_count)), desc='Создаем кошельки: ', unit=' кошельков', colour='GREEN'):
         wallet = WalletGenerator.generate_wallet()
         wallets_rows.append([wallet.address, wallet.private_key, wallet.seed_phrase])
-        time.sleep(random.randint(3, 7))
+        time.sleep(random.randint(12, 19))
 
     with open(accounts_path, 'w') as f:
         writer = csv.writer(f)
